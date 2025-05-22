@@ -83,6 +83,22 @@ const Services: React.FC = () => {
           ))}
         </div>
       </Container>
+
+      <Container>
+        <SectionHeading
+          title="Our Products"
+          subtitle="Explore our wide range of high-quality cosmetic products"
+        />
+        <div className="overflow-hidden">
+          <iframe
+            src="https://katalog.dltnova.com/galeri.php"
+            width="100%"
+            height="400"
+            style={{ border: 'none', overflow: 'hidden' }}
+            title="Our Products"
+          />
+        </div>
+      </Container>
     </section>
   );
 };

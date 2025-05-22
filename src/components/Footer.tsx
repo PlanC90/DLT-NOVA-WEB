@@ -49,7 +49,7 @@ const Footer: React.FC = () => {
                       e.preventDefault();
                       handleNavClick(item.href);
                     }}
-                    style={{ color: 'rgba(128, 0, 128, 0.5)' }}
+                    style={{ color: 'white' }}
                     className="text-gray-400 hover:text-gray-500 transition-colors"
                   >
                     {item.label}

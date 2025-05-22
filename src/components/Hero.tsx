@@ -19,32 +19,33 @@ const Hero: React.FC = () => {
   };
 
   return (
-    <section 
-      id="home" 
+    <section
+      id="home"
       className="relative h-screen flex items-center justify-center overflow-hidden"
     >
-      <div 
+      <div
         className="absolute inset-0 bg-cover bg-center bg-no-repeat"
-        style={{ 
-          backgroundImage: 'url(https://images.pexels.com/photos/965989/pexels-photo-965989.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2)',
+        style={{
+          backgroundImage:
+            'url(https://images.pexels.com/photos/965989/pexels-photo-965989.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2)',
           filter: 'brightness(0.4)',
           transform: loaded ? 'scale(1)' : 'scale(1.1)',
-          transition: 'transform 1.5s ease-out, filter 1.5s ease-out'
+          transition: 'transform 1.5s ease-out, filter 1.5s ease-out',
         }}
       />
-      
+
       <div className="relative z-10 max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-        <h1 
+        <h1
           className={`text-4xl sm:text-5xl md:text-6xl font-bold text-white mb-6 tracking-tight
             ${loaded ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-12'}
             transition-all duration-1000 ease-out
           `}
         >
-          <span className="block">Premium Fragrances &</span>
+          <span className="block">Cosmetic Manufacturing &</span>
           <span className="block mt-2">Perfume Manufacturing</span>
         </h1>
-        
-        <p 
+
+        <p
           className={`text-xl md:text-2xl text-gray-100 max-w-3xl mx-auto mb-8
             ${loaded ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-12'}
             transition-all duration-1000 delay-300 ease-out
@@ -52,15 +53,15 @@ const Hero: React.FC = () => {
         >
           Crafting exquisite perfumes, room fragrances, and essential oils since 1996
         </p>
-        
-        <div 
+
+        <div
           className={`flex flex-col sm:flex-row justify-center space-y-4 sm:space-y-0 sm:space-x-4
             ${loaded ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-12'}
             transition-all duration-1000 delay-500 ease-out
           `}
         >
-          <Button 
-            size="lg" 
+          <Button
+            size="lg"
             onClick={handleCatalogClick}
             className="bg-accent hover:bg-accent-dark text-black"
           >
